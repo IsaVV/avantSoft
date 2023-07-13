@@ -24,7 +24,7 @@ function HomeScreen() {
         <ScrollView>
           <Header />
           {usersGroups.map((group, index) => (
-            <ListCards key={index} information={group} />
+            <ListCards key={index} users={group} />
           ))}
         </ScrollView>
       ) : (

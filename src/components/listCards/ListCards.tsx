@@ -4,12 +4,12 @@ import styles from './styles';
 import {UserInformation} from '../../resources/users/usersModel';
 
 interface ListCardProps {
-  information: UserInformation[];
+  users: UserInformation[];
 }
 
 const Separator = () => <View style={styles.separator} />;
 
-const ListCards: FC<ListCardProps> = ({information}) => {
+const ListCards: FC<ListCardProps> = ({users}) => {
   const renderCardItem = (item: UserInformation) => {
     return (
       <View style={[styles.container, styles.shadowProp]}>
@@ -38,7 +38,7 @@ const ListCards: FC<ListCardProps> = ({information}) => {
 
   return (
     <FlatList
-      data={information}
+      data={users}
       showsHorizontalScrollIndicator={false}
       keyExtractor={item => String(item.id)}
       horizontal
