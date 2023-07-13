@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     lineHeight: 36,
     color: '#525251',
+    fontFamily: 'Raleway',
   },
   title: {
     fontWeight: 'bold',
@@ -13,12 +14,14 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     color: '#525251',
     paddingTop: 8,
+    fontFamily: 'Raleway',
   },
   text: {
     fontSize: 18,
     lineHeight: 21,
     paddingTop: 4,
     color: '#525251',
+    fontFamily: 'Raleway',
   },
   container: {
     backgroundColor: 'white',
